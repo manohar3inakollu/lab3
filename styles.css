@@ -1,0 +1,86 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7; /* Light grey background for a clean look */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff; /* Pure white for the container */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    width: 300px;
+}
+
+h1 {
+    color: #2c3e50; /* Dark blue shade for the heading */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: #34495e; /* Darker shade for better visibility */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="range"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #bdc3c7; /* Lighter grey for borders */
+    border-radius: 4px;
+    color: #333; /* Dark text for better readability */
+    background-color: #ecf0f1; /* Very light grey for input fields */
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    margin: 10px 0;
+    background: #ecf0f1; /* Very light grey for the slider track */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: #3498db; /* Bright blue for the slider thumb */
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #bdc3c7;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #3498db; /* Bright blue for the slider thumb */
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #bdc3c7;
+}
+
+input[type="text"]:disabled,
+input[type="number"]:disabled {
+    background-color: #ecf0f1; /* Very light grey for disabled inputs */
+    color: #7f8c8d; /* Dark grey for disabled text to improve visibility */
+}
+
+/* Add responsive design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
