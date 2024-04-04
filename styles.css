@@ -49,7 +49,7 @@ input[type="range"] {
     appearance: none;
     width: 100%;
     margin: 10px 0;
-    background: #ecf0f1; /* Very light grey for the slider track */
+    background: #ffffff; /* Very light grey for the slider track */
 }
 
 input[type="range"]::-webkit-slider-thumb {
@@ -70,6 +70,12 @@ input[type="range"]::-moz-range-thumb {
     cursor: pointer;
     border-radius: 50%;
     border: 1px solid #bdc3c7;
+}
+
+input[type="text"]:enabled {
+    background-color: #ffffff; /* White background for enabled state */
+    color: #333; /* Darker text for better readability */
+    border: 1px solid #ced4da; /* Standard border color */
 }
 
 input[type="text"]:disabled,
